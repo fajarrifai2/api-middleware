@@ -48,8 +48,8 @@ func createTicket(c *gin.Context) {
 
 	ticket.ID = idCounter
 	idCounter++
-	// ticket.Token = generateToken("ksjdkasdkjashdkjashdkh")
-	ticket.Token = "token_fajar" // Set token secara statis sesuai kebutuhan
+
+	ticket.Token = "JKT-SBY" // Set token secara statis sesuai kebutuhan
 	tickets = append(tickets, ticket)
 	c.JSON(http.StatusCreated, ticket)
 }
